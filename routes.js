@@ -50,7 +50,8 @@ module.exports = router => {
 			.catch(err => res.status(err.status).json({ message: err.message }));
 		}
 	});
-	router.post('/login', (req, res) => {
-	});
+	router.post('login',function(req,res) {
+		console.log(req.body)
+    res.send({ "status": "201","usertype": "lender","token": "daidsa876dsa0dslbabds987"})});
 
 }
