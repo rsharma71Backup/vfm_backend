@@ -13,6 +13,7 @@ module.exports = router => {
 
     router.post('/registerUser', (req, res) => {
 
+        console.log(req.body);
         const nid = Math.floor(Math.random() * (100000 - 1)) + 1;
         const id = nid.toString();
         const firstname = req.body.firstname;
@@ -36,7 +37,7 @@ module.exports = router => {
             res.status(400).json({ message: 'Invalid Request !' });
 
         } else {
-          
+
 
             register.registerUser(id, firstname, lastname, email, password, operationalemail, phone, relationshipmanageremail, customerlimit, feepercentage, interestearning, accountno, ifsccode, pan, address)
                 .then(result => {
@@ -60,22 +61,21 @@ module.exports = router => {
         console.log(req.body)
         res.send({ "status": "201", "usertype": "lender", "token": "daidsa876dsa0dslbabds987" })
     });
-    
-     router.post('/createProgram', function(req, res) {
-         const nid = Math.floor(Math.random() * (100000 - 1)) + 1;
-        const id = nid.toString();
-           const manufacturer = req.body.manufacturer;
-            const supplier = req.body.supplier;
 
-            if(!manufacturer||!supplier){
-             res.status(400).json({ message: 'Invalid Request !' });
-            }
-            else{
-                createProgram.createProgram(id,manufacturer,supplier)
+    router.post('/createProgram', function(req, res) {
+        const nid = Math.floor(Math.random() * (100000 - 1)) + 1;
+        const id = nid.toString();
+        const manufacturer = req.body.manufacturer;
+        const supplier = req.body.supplier;
+
+        if (!manufacturer || !supplier) {
+            res.status(400).json({ message: 'Invalid Request !' });
+        } else {
+            createProgram.createProgram(id, manufacturer, supplier)
                 .then(result => {
 
                     //	res.setHeader('Location', '/registerUser/'+email);
-                    res.status(result.status).json({ message: result.message,id:result.id })
+                    res.status(result.status).json({ message: result.message, id: result.id })
                 })
 
             .catch(function(err) {
@@ -87,5 +87,5 @@ module.exports = router => {
 
             });
         }
-         });
+    });
 }
