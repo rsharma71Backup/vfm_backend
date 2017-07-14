@@ -75,7 +75,7 @@ module.exports = router => {
                 .then(result => {
 
                     //	res.setHeader('Location', '/registerUser/'+email);
-                    res.status(result.status).json({ message: result.message })
+                    res.status(result.status).json({ message: result.message,id:result.id })
                 })
 
             .catch(function(err) {

@@ -835,3 +835,95 @@
 [32m[2017-07-14 18:37:25.360] [INFO] blockchain_sdk - [39mdoInvoke : Transaction for invoke submitted  - {"chaincodeID":"31a1a32e900040089d68b9542bfde6990018b1d4c68f0d0688baba4003479702337e69e816d5a5425ac9dfe8087fcf48c1721fb73745ae8d3374ef56b5e6c07e","fcn":"CreateProgram","args":["21556","ManufacturerA","SupplierA,SupplierB"]}
 [32m[2017-07-14 18:37:25.361] [INFO] blockchain_sdk - [39mcreate campaign : Successfully registered user - EventInvokeSubmitted { uuid: 'd1e23c7b-2413-4085-a85a-02aa3adb0fab' }
 [32m[2017-07-14 18:37:28.907] [INFO] blockchain_sdk - [39mdoInvoke : Transaction for invoke complete  - EventInvokeComplete { result: 'Tx d1e23c7b-2413-4085-a85a-02aa3adb0fab complete' }
+[32m[2017-07-14 18:50:25.201] [INFO] BlockchainSampleClient - [39m
+[32m[2017-07-14 18:50:25.204] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-07-14 18:50:25.204] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Fri Jul 14 2017 18:50:25 GMT+0530 (IST) <<<
+[32m[2017-07-14 18:50:25.204] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-07-14 18:50:25.205] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/home/risabh/nodeWorkspace/vfm_backend/app.js
+[32m[2017-07-14 18:50:25.205] [INFO] BlockchainSampleClient - [39mNode version: v6.10.3
+[32m[2017-07-14 18:50:25.205] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.10.3","v8":"5.1.281.101","uv":"1.9.1","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-07-14 18:50:25.206] [INFO] BlockchainSampleClient - [39m
+[32m[2017-07-14 18:50:25.206] [INFO] loggingHelper - [39mCreated logger for app.js at level ALL
+[34m[2017-07-14 18:50:25.207] [TRACE] app.js - [39msetup : entry
+[34m[2017-07-14 18:50:25.208] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-07-14 18:50:25.208] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"7431aea4-9001-4ab8-8ae5-f889f28aa596-bluemix","password":"b3f28c2d90d3c9311760c3118d906f9c7ada31a5b1ce38dbe2dfbd2c46ff239a","host":"7431aea4-9001-4ab8-8ae5-f889f28aa596-bluemix.cloudant.com","port":443,"url":"https://7431aea4-9001-4ab8-8ae5-f889f28aa596-bluemix:b3f28c2d90d3c9311760c3118d906f9c7ada31a5b1ce38dbe2dfbd2c46ff239a@7431aea4-9001-4ab8-8ae5-f889f28aa596-bluemix.cloudant.com"}} 
+[34m[2017-07-14 18:50:25.215] [TRACE] app.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-07-14 18:50:25.215] [TRACE] app.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-07-14 18:50:25.216] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-07-14 18:50:25.216] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-07-14 18:50:26.472] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-07-14 18:50:26.477] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-07-14 18:50:26.478] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-07-14 18:50:26.479] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-07-14 18:50:26.479] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-07-14 18:50:26.482] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-07-14 18:50:26.484] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-07-14 18:50:26.573] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-07-14 18:50:26.584] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-07-14 18:50:26.585] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-07-14 18:50:26.894] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-07-14 18:50:26.909] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-07-14 18:50:26.910] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-07-14 18:50:26.910] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-07-14 18:50:26.914] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-07-14 18:50:26.914] [TRACE] kv_store_model - [39mget : params - {"id":"member.risabh.s"} 
+[32m[2017-07-14 18:50:27.222] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.risabh.s - undefined
+[32m[2017-07-14 18:50:27.235] [INFO] blockchain_sdk - [39mregisterUser : Successfully registered user on blockchain: risabh.s - undefined
+[34m[2017-07-14 18:50:27.237] [TRACE] blockchain_sdk - [39mdoLogin : entry
+[32m[2017-07-14 18:50:27.242] [INFO] blockchain_sdk - [39mdoLogin : Successfully logged in user on blockchain: risabh.s - undefined
+[32m[2017-07-14 18:50:27.242] [INFO] console - [39mserver is running on3001
+[32m[2017-07-14 18:50:31.793] [INFO] console - [39mENTERING THE Userregisteration from register.js to blockchainSdk
+[32m[2017-07-14 18:50:31.794] [INFO] console - [39mcalling SDK for registration
+[34m[2017-07-14 18:50:31.795] [TRACE] blockchain_sdk - [39mcreate program : entry 
+[34m[2017-07-14 18:50:31.797] [TRACE] blockchain_sdk - [39mcreate program : params - {"user":"risabh.s","createProgram":{"id":"19414","manufacturer":"ManufacturerA","supplier":"SupplierA,SupplierB"}} 
+[34m[2017-07-14 18:50:31.800] [TRACE] blockchain_sdk - [39mdoInvoke : entry 
+[34m[2017-07-14 18:50:31.800] [TRACE] blockchain_sdk - [39mdoInvoke : params - {"requestSpec":{"chaincodeID":"31a1a32e900040089d68b9542bfde6990018b1d4c68f0d0688baba4003479702337e69e816d5a5425ac9dfe8087fcf48c1721fb73745ae8d3374ef56b5e6c07e","fcn":"CreateProgram","args":["19414","ManufacturerA","SupplierA,SupplierB"]},"user":"risabh.s","retryCounter":0} 
+[32m[2017-07-14 18:50:37.238] [INFO] blockchain_sdk - [39mdoInvoke : Transaction for invoke submitted  - {"chaincodeID":"31a1a32e900040089d68b9542bfde6990018b1d4c68f0d0688baba4003479702337e69e816d5a5425ac9dfe8087fcf48c1721fb73745ae8d3374ef56b5e6c07e","fcn":"CreateProgram","args":["19414","ManufacturerA","SupplierA,SupplierB"]}
+[32m[2017-07-14 18:50:37.241] [INFO] blockchain_sdk - [39mcreate campaign : Successfully registered user - EventInvokeSubmitted { uuid: '5e88c7a9-c09a-4998-8637-b68ec1be6fbc' }
+[32m[2017-07-14 18:50:40.894] [INFO] blockchain_sdk - [39mdoInvoke : Transaction for invoke complete  - EventInvokeComplete { result: 'Tx 5e88c7a9-c09a-4998-8637-b68ec1be6fbc complete' }
+[32m[2017-07-14 18:51:22.994] [INFO] BlockchainSampleClient - [39m
+[32m[2017-07-14 18:51:22.997] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-07-14 18:51:22.998] [INFO] BlockchainSampleClient - [39m>>> BlockchainSampleClient env local, started Fri Jul 14 2017 18:51:22 GMT+0530 (IST) <<<
+[32m[2017-07-14 18:51:22.998] [INFO] BlockchainSampleClient - [39m-----------------------------------------------------------------------------
+[32m[2017-07-14 18:51:22.999] [INFO] BlockchainSampleClient - [39mNode started via(process.argv): /usr/bin/nodejs,/home/risabh/nodeWorkspace/vfm_backend/app.js
+[32m[2017-07-14 18:51:22.999] [INFO] BlockchainSampleClient - [39mNode version: v6.10.3
+[32m[2017-07-14 18:51:23.000] [INFO] BlockchainSampleClient - [39mNode and its dependency versions: {"http_parser":"2.7.0","node":"6.10.3","v8":"5.1.281.101","uv":"1.9.1","zlib":"1.2.11","ares":"1.10.1-DEV","icu":"56.1","modules":"48","openssl":"1.0.2k"}
+[32m[2017-07-14 18:51:23.000] [INFO] BlockchainSampleClient - [39m
+[32m[2017-07-14 18:51:23.001] [INFO] loggingHelper - [39mCreated logger for app.js at level ALL
+[34m[2017-07-14 18:51:23.002] [TRACE] app.js - [39msetup : entry
+[34m[2017-07-14 18:51:23.003] [TRACE] datastore.js - [39minit : entry 
+[34m[2017-07-14 18:51:23.003] [TRACE] datastore.js - [39minit : params - {"name":"Cloudant NoSQL DB-vern","label":"cloudantNoSQLDB","plan":"Lite","credentials":{"username":"7431aea4-9001-4ab8-8ae5-f889f28aa596-bluemix","password":"b3f28c2d90d3c9311760c3118d906f9c7ada31a5b1ce38dbe2dfbd2c46ff239a","host":"7431aea4-9001-4ab8-8ae5-f889f28aa596-bluemix.cloudant.com","port":443,"url":"https://7431aea4-9001-4ab8-8ae5-f889f28aa596-bluemix:b3f28c2d90d3c9311760c3118d906f9c7ada31a5b1ce38dbe2dfbd2c46ff239a@7431aea4-9001-4ab8-8ae5-f889f28aa596-bluemix.cloudant.com"}} 
+[34m[2017-07-14 18:51:23.010] [TRACE] app.js - [39mgetCloudantKeyValStore : entry 
+[34m[2017-07-14 18:51:23.011] [TRACE] app.js - [39mgetCloudantKeyValStore : params - "devworks_app_master" 
+[34m[2017-07-14 18:51:23.011] [TRACE] datastore.js - [39mgetDbInstance : entry 
+[34m[2017-07-14 18:51:23.011] [TRACE] datastore.js - [39mgetDbInstance : params - "devworks_app_master" 
+[32m[2017-07-14 18:51:24.216] [INFO] datastore.js - [39mgetDbInstance : devworks_app_master already exists. - undefined
+[34m[2017-07-14 18:51:24.221] [TRACE] blockchain_network - [39msetupBlockchain : entry 
+[34m[2017-07-14 18:51:24.221] [TRACE] blockchain_network - [39msetupBlockchain : params - [Circular] 
+[34m[2017-07-14 18:51:24.222] [TRACE] blockchain_network - [39mchainInit : entry 
+[34m[2017-07-14 18:51:24.222] [TRACE] blockchain_network - [39mchainInit : params - [Circular] 
+[32m[2017-07-14 18:51:24.226] [INFO] blockchain_network - [39mchainInit : Chain Initialized - Chain {  peers: [],  securityEnabled: true,  members: {},  tcertBatchSize: 200,  devMode: false,  preFetchMode: true,  deployWaitTime: 100,  invokeWaitTime: 5,  name: 'sc_cc',  eventHub:    EventHub {     txCallback: [Function],     chaincodeRegistrants: HashTable {},     blockRegistrants: Set {},     txRegistrants: HashTable {},     ep: null,     connected: false },  keyValStore: CloudantKeyValStore { dbName: 'devworks_app_master', dbInstance: [Object] } }
+[32m[2017-07-14 18:51:24.228] [INFO] blockchain_network - [39mloadNetworkConfiguration : Successfully loaded network configuration - undefined
+[34m[2017-07-14 18:51:24.312] [TRACE] blockchain_network - [39mdoLogin : entry
+[34m[2017-07-14 18:51:24.327] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-07-14 18:51:24.328] [TRACE] kv_store_model - [39mget : params - {"id":"member.WebAppAdmin"} 
+[32m[2017-07-14 18:51:24.633] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.WebAppAdmin - undefined
+[32m[2017-07-14 18:51:24.645] [INFO] blockchain_network - [39mdoLogin : Successfully logged in user on blockchain: WebAppAdmin - undefined
+[32m[2017-07-14 18:51:24.646] [INFO] blockchain_network - [39mconfigureNetwork : Successfully enrolled registrar: WebAppAdmin - undefined
+[32m[2017-07-14 18:51:24.646] [INFO] blockchain_network - [39msetupBlockchain : blockchain setup complete - undefined
+[34m[2017-07-14 18:51:24.648] [TRACE] kv_store_model - [39mget : entry 
+[34m[2017-07-14 18:51:24.649] [TRACE] kv_store_model - [39mget : params - {"id":"member.risabh.s"} 
+[32m[2017-07-14 18:51:24.942] [INFO] kv_store_model - [39mget : successfully fetched member file with id member.risabh.s - undefined
+[32m[2017-07-14 18:51:24.956] [INFO] blockchain_sdk - [39mregisterUser : Successfully registered user on blockchain: risabh.s - undefined
+[34m[2017-07-14 18:51:24.957] [TRACE] blockchain_sdk - [39mdoLogin : entry
+[32m[2017-07-14 18:51:24.960] [INFO] blockchain_sdk - [39mdoLogin : Successfully logged in user on blockchain: risabh.s - undefined
+[32m[2017-07-14 18:51:24.961] [INFO] console - [39mserver is running on3001
+[32m[2017-07-14 18:51:29.344] [INFO] console - [39mENTERING THE Userregisteration from register.js to blockchainSdk
+[32m[2017-07-14 18:51:29.345] [INFO] console - [39mcalling SDK for registration
+[34m[2017-07-14 18:51:29.346] [TRACE] blockchain_sdk - [39mcreate program : entry 
+[34m[2017-07-14 18:51:29.346] [TRACE] blockchain_sdk - [39mcreate program : params - {"user":"risabh.s","createProgram":{"id":"51735","manufacturer":"ManufacturerA","supplier":"SupplierA,SupplierB"}} 
+[34m[2017-07-14 18:51:29.347] [TRACE] blockchain_sdk - [39mdoInvoke : entry 
+[34m[2017-07-14 18:51:29.347] [TRACE] blockchain_sdk - [39mdoInvoke : params - {"requestSpec":{"chaincodeID":"31a1a32e900040089d68b9542bfde6990018b1d4c68f0d0688baba4003479702337e69e816d5a5425ac9dfe8087fcf48c1721fb73745ae8d3374ef56b5e6c07e","fcn":"CreateProgram","args":["51735","ManufacturerA","SupplierA,SupplierB"]},"user":"risabh.s","retryCounter":0} 
+[32m[2017-07-14 18:51:35.803] [INFO] blockchain_sdk - [39mdoInvoke : Transaction for invoke submitted  - {"chaincodeID":"31a1a32e900040089d68b9542bfde6990018b1d4c68f0d0688baba4003479702337e69e816d5a5425ac9dfe8087fcf48c1721fb73745ae8d3374ef56b5e6c07e","fcn":"CreateProgram","args":["51735","ManufacturerA","SupplierA,SupplierB"]}
+[32m[2017-07-14 18:51:35.805] [INFO] blockchain_sdk - [39mcreate campaign : Successfully registered user - EventInvokeSubmitted { uuid: '95780005-3e36-4dd1-8c3a-435ed4573935' }
+[32m[2017-07-14 18:51:38.444] [INFO] blockchain_sdk - [39mdoInvoke : Transaction for invoke complete  - EventInvokeComplete { result: 'Tx 95780005-3e36-4dd1-8c3a-435ed4573935 complete' }

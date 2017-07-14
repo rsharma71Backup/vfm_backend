@@ -17,7 +17,7 @@ exports.createProgram = (id,manufacturer,supplier) =>
         console.log("ENTERING THE Userregisteration from register.js to blockchainSdk");
 
         bcSdk.createProgram({ user: user, createProgram: newUser })
-            .then(() => resolve({ status: 201, message: "saved program" }))
+            .then(() => resolve({ status: 201, message: "saved program",id:id }))
             .catch(err => {
                         
                     console.log("error occurred" + err);
