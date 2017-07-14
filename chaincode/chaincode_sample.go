@@ -109,6 +109,8 @@ func (t *SimpleChaincode) Invoke(stub shim.ChaincodeStubInterface, function stri
 	} else if function == "SaveSession" { //writes user session details to chaincode state
 		return t.SaveSession(stub, args)
 
+	} eler if function == "CreateProgram"{
+		return t.CreateProgram(stub, args)
 	}
 
 	fmt.Println("invoke did not find func: " + function)
@@ -414,4 +416,8 @@ func (t *SimpleChaincode) SetUserForSession(stub shim.ChaincodeStubInterface, ar
 		}
 	}
 	return nil, nil
+}
+
+CreateProgram(t *SimpleChaincode) SetUserForSession(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
+	//var programdetails = args[0]
 }

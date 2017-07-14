@@ -1,0 +1,22 @@
+{
+  "jsonrpc": "2.0",
+  "method": "deploy",
+  "params": {
+    "type": 1,
+    "chaincodeID": {
+      "path": "https://github.com/risabhsharma71/vfm_chaincode"
+    },
+    "ctorMsg": {
+      "function": "init",
+      "args": [
+        "10"
+      ]
+    },
+    "secureContext": "user_type1_0"
+  },
+  "id": 0
+}
+
+user_type1_0 eff3f4163d
+
+bf5acc8c00d0041feff51039a2fa344435f7f1d87c438466acaf81a7a3c77ca1d545d47b711211ba021485b76a554f2896c34754f7b64efbbcd3e6d8ec2a3638
